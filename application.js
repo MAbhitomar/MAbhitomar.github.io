@@ -6,6 +6,7 @@ function TrackOrder() {
     var cityName = searchCity.value;
     if (cityName.trim().length == 0) {
         return alert('Please enter a Order Id');
+         loadingText.style.display ='none';
     }
     var http = new XMLHttpRequest();
     var url = "j.json";
