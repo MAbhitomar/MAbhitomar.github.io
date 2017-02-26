@@ -5,8 +5,9 @@ function TrackOrder() {
     StatusInfo.style.display= 'none';
     var cityName = searchCity.value;
     if (cityName.trim().length == 0) {
+        loadingText.style.display ='none';
         return alert('Please enter a Order Id');
-         loadingText.style.display ='none';
+         
     }
     var http = new XMLHttpRequest();
     var url = "j.json";
